@@ -1,0 +1,50 @@
+{% extends 'base-static.html' %}
+{% block body %}
+{% block header %}    
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top shadow">
+            <div class="container justify-content-end">
+                <a class="navbar-brand navbar-brand-center neontext pulsate" href="{% url 'index' %}">YAN</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav h5 p-1">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="{% url 'index' %}">我们的产品</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'brew-guide' %}">咖啡冲煮指南</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'partnerships' %}">与我们成为搭档</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'ourstory' %}">我们的故事</a>
+                        </li>
+                    </ul>
+                    <!-- <div class="d-flex justify-content-evenly">
+                        <a class="btn text-white" href="">登入</a>
+                        <a class="btn text-white" href="">购物车</a>
+                    </div> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+{% endblock header %}
+{% block main %}
+{% endblock main %}
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="container-fluid bg-dark">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p class="text-center text-white">&copy; 2022, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+    </p>
+  </footer>
+
+  {% endblock body %}
